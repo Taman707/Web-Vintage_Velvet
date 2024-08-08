@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html{
+            background-color: black;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none !important;
+        }
+
+        .logo {
+            border-radius: 50%;
+        }
+
+        .inter_one {
+            background-color: rgba(0, 0, 0, 0.582) !important;
+            z-index: 1000;
+            position: absolute;
+            top: 0px;
+        }
+
+        .division{
+            height: 1vh;
+            width: 99vw;
+            background-color: gray;
+            overflow: hidden;
+        }
+
+        .inter_two {
+            z-index: 800;
+        }
+
+        .container-fluid {
+            background-color: black;
+        }
+
+        .nav-tabs .nav-link {
+            border: none;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+        }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+        .loc {
+            position: absolute;
+            top: 100px;
+            left: 650px;
+        }
+
+        .loc2 {
+            position: absolute;
+            top: 180px;
+            right: 850px;
+        }
+
+        @font-face {
+            font-family: font-one;
+            src: url(./fonts/HeidanRoundedVintageDemoDra-PVGaE.otf);
+        }
+
+        @media(max-width:1000px) {
+
+            .logo {
+                height: 35px;
+                width: 40px;
+            }
+            .loc {  
+                position: absolute;
+            top: 100px;
+            left: 0px;
+            font-size: 16px;
+
+        }
+        .loc2 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            font-size: 16px;
+        }
+
+        }
+
+        .im {
+            height: 300px !important;
+        }
+
+        .inter2h {
+            opacity: 0;
+        }
+        @media (max-width:760px){
+            .inter2h {
+            opacity: 1;
+        } 
+        }
+
+        .inter2v {
+            transition: 3s 1s;
+            opacity: 1;
+        }
+
+        .con_mid {
+            height: 80vh;
+        }
+
+        .why_us {
+            border-radius: 50%;
+        }
+
+        .outer_inter {
+            position: relative;
+            z-index: 500;
+
+        }
+
+        .mapv{
+            position: absolute;
+            top: 1400px;
+            left: 445px;
+            z-index: 1000;
+        }
+        @media (max-width:920px){
+            .mapv{
+            position: absolute;
+            top: 1800px;
+            left: 25px;
+            z-index: 1000;
+        }
+        }
+        .map{
+            display: none;
+        }
+
+        .back_drop {
+            background-color: rgba(0, 0, 0, 0.95) !important;
+        }
+        .back_uptext{
+            background: transparent;
+            display: none;
+            
+        }
+        .why_us_img_col{
+            padding-top: 110px;
+            padding-left: 100px;
+        }
+        .why_us_text{
+            padding-top: 80px;
+        }
+        @media (max-width:770px){
+            .back_uptext{
+            background: transparent;
+            display: block;
+            position: absolute;
+            top: 450px;
+            left: 50px;
+            font-size: 19px;
+        }
+        .carousel-inner{
+            padding-top: 100px;
+        }
+        }
+        @media (max-width:865px){
+            .why_us_lines{
+               font-size: 15px; 
+            }
+            .why_us_img_col{
+                padding-top: 0px;
+                padding-left: 0px;
+            }
+            .why_us{
+                height: 250px;
+                width: 300px;
+            }
+            .why_us_text{
+                padding-top: 0px;
+            }
+        }
+        .rights_mention1{
+            padding-left: 570px;
+        }
+        .follow_icons{
+            padding-left: 590px;
+        }
+        .cust_head{
+            padding-top: 80px;
+            padding-left: 200px;
+        }
+        @media (max-width:420px){
+            .cust_head{
+                padding-left: 100px;
+            }
+        }
+        @media (max-width:800px){
+            .rights_mention1{
+            padding-left: 70px;
+        }
+        .follow_icons{
+            padding-left: 90px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid inter_one">
+        <div class="row ">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <a href="#" class="navbar"><img src="./Assets/logo_res_ff.png" alt="logo" height="69px" width="80px"
+                            class="logo"></a>
+                    <button class="navbar-toggler text-light" type="button" data-toggle="collapse"
+                        data-target="#dontshow" aria-controls="#dontshow" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-secondary color-light"></span>
+
+                    </button>
+                    <div class="collapse navbar-collapse" id="dontshow">
+                        <ul class="nav nav-tabs ml-auto text-dark">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link "> Home</a>
+                            </li class="nav-item">
+                            <li>
+                                <a href="index_3.html" class="nav-link "> About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index_5.html" class="nav-link ">Food Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index_4.html" class="nav-link ">Book Table</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="division">
+    </div>
+
+    <div class="container-fluid inter_two">
+        <div class="back_uptext">
+            <h4 class="text-light" style=" font-family: font-one;">Enjoy your scrumptious
+                dinner in the beautiful night</h4>
+                <h4 class="text-light t2" style="font-family: font-one;">Enjoy Delicious Food
+                    in Your Healthy Life</h4>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" style="height: 100vh;">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 img-fluid" src="./Assets/carousel_img_one.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block loc">
+                        <h4 class="text-light" style="font-size: 48px; font-family: font-one;">Enjoy your scrumptious
+                            dinner in the beautiful night</h4>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100 img-fluid" src="./Assets/carousel_img_five.avif" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block loc2">
+                        <h4 class="text-light t2" style="font-size: 48px; font-family: font-one;">Enjoy Delicious Food
+                            in Your Healthy Life</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="division">
+    </div>
+
+    <div class="container-fluid con_mid">
+        <div class="row">
+            <div class="col-12 col-md-5 why_us_img_col" >
+                <img src="./Assets/why_choose_us.jpg" alt="why_choose_us" class="img-fluid why_us">
+            </div>
+            <div class="col-12 col-md-7 why_us_text">
+                <h2 class="at" style="color: gold;">Why People Choose Us?</h2>
+                <h4 class="text-light why_us_lines"><b>Unique Culinary Experience:</b> Emphasize any unique dishes or a signature
+                    culinary style that sets your
+                    restaurant apart from others in the area. </h4>
+                <h4 class="text-light mt-3 why_us_lines">
+                    <b>Quality Ingredients:</b> Highlight the quality and sourcing of your ingredients. Mention if you
+                    use
+                    locally sourced produce, organic ingredients, or premium cuts of meat.
+                </h4>
+                <h4 class="text-light mt-3 why_us_lines">
+                    <b>Ambiance and Atmosphere: </b>Describe the ambiance of your restaurant. Whether it's cozy and
+                    intimate or vibrant and energetic, paint a picture of what diners can expect.
+
+
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="division">
+    </div>
+
+    <div class="container-fluid outlet_inter " >
+        <div class="map mone" >
+        <div class="card " style="width: auto; border: 5px solid goldenrod; background-color: honeydew;">
+                <div class="card-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51562.52874331231!2d-115.2675722513672!3d36.12618779999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c7ebccb27ca3%3A0x46528dd809f447f9!2sM%C3%A0s%20Por%20Favor%20Taqueria%20y%20Tequila!5e0!3m2!1sen!2sin!4v1718886557680!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="card-footer">
+                    <div class="card-text">
+                        <h4>Life is short, make it sweet.</h4>
+                        <button class="btn btn-danger" onclick="undo1()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map mtwo">
+            <div class="card" style="width: auto; border: 5px solid goldenrod; background-color: honeydew;">
+                <div class="card-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77681.51506491695!2d13.297942285069093!3d52.52353043974892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c27d0f02e7%3A0xce65069e37023fc1!2sItalofritzen!5e0!3m2!1sen!2sin!4v1718899804356!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="card-footer">
+                    <div class="card-text">
+                        <h4>You’re in good hands with us.</h4>
+                        <button class="btn btn-danger" onclick="undo2()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map mthree">
+        <div class="card" style="width: auto; border: 5px solid goldenrod; background-color: honeydew;">
+                <div class="card-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39729.17367971075!2d-0.263940651367208!3d51.51187020000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760555840fbadb%3A0xd86ac51010965b17!2sBella%20Italia%20-%20Queensway%2055!5e0!3m2!1sen!2sin!4v1718899962556!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="card-footer">
+                    <div class="card-text">
+                        <h4>A genuine fine-dining experience awaits.</h4>
+                        <button class="btn btn-danger" onclick="undo3()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map mfour">
+            <div class="card" style="width: auto; border: 5px solid goldenrod; background-color: honeydew;">
+                <div class="card-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105776.08999544212!2d-118.38537224375733!3d34.05662268472172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c621d7d91b49%3A0x5e3e80cfbddfba70!2sBestia!5e0!3m2!1sen!2sin!4v1718900205539!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="card-footer">
+                    <div class="card-text">
+                        <h4>Creativity is always on our menu.</h4>
+                        <button class="btn btn-danger" onclick="undo4()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map mfive">
+        <div class="card" style="width: auto; border: 5px solid goldenrod; background-color: honeydew;">
+ 
+                <div class="card-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105775.8036422471!2d-118.38537250579186!3d34.056852153182575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c64a4fa56b5d%3A0x4be391e53ccaf816!2sLe%20Petit%20Paris!5e0!3m2!1sen!2sin!4v1718900306674!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="card-footer">
+                    <div class="card-text">
+                        <h4>Food that tells a story</h4>
+                        <button class="btn btn-danger" onclick="undo5()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map msix">
+            <div class="card " style="width: auto; border: 5px solid goldenrod; background-color: honeydew;">
+                <div class="card-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423126.0106545412!2d-119.08094561093746!3d34.052285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c371b22ae597%3A0xd80790ff3c544db0!2sBar%20Celona!5e0!3m2!1sen!2sin!4v1718900409742!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="card-footer">
+                    <div class="card-text">
+                        <h4>Come for a drink, stay for a meal.</h4>
+                        <button class="btn btn-danger" onclick="undo6()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid inter2h con text-center" >
+            <h1 class="pt-5" style="color: gold;">Our Outlets </h1>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="./Assets/outlet_1r.jpeg" alt="img" class="img-fluid card-img-top im img1 " >
+                    <div class="card pt-2" onclick="change1() ,undo2(), undo3(),undo4(),undo5(),undo6()">
+                    
+                        <div class="card-body ">
+                            <h3 class="card-text text-center " >Las Vegas</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="./Assets/outlet_2r.jpeg" alt="img" class="img-fluid card-img-top im ">
+                    <div class="card  pt-2" onclick="change2(),undo1(),undo3(),undo4(),undo5(),undo6()">
+                        <div class="card-body">
+                            <h3 class="card-text text-center" >Berlin</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="./Assets/outlet_3.jpeg" alt="img" class="img-fluid card-img-top im ">
+                    <div class="card  pt-2" onclick="change3(),undo1(),undo2(),undo4(),undo5(),undo6()">
+                        <div class="card-body">
+                            <h3 class="card-text text-center" >London</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pb-5">
+                <div class="col-12 col-md-4">
+                    <img src="./Assets/outlet_4r.jpeg" alt="img" class="img-fluid card-img-top im ">
+                    <div class="card  pt-2" onclick="change4(),undo1(),undo2(),undo3(),undo5(),undo6()">
+                        <div class="card-body">
+                            <h3 class="card-text text-center" >Los Angeles</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="./Assets/outlet_5.jpeg" alt="img" class="img-fluid card-img-top im ">
+                    <div class="card  pt-2" onclick="change5(),undo1(),undo2(),undo3(),undo4(),undo6()">
+                        <div class="card-body">
+                            <h3 class="card-text text-center" >Paris</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="./Assets/outlet_6.jpeg" alt="img" class="img-fluid card-img-top im ">
+                    <div class="card  pt-2" onclick="change6(),undo1(),undo2(),undo3(),undo4(),undo5()">
+                        <div class="card-body">
+                            <h3 class="card-text text-center" >Barcelona</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="division">
+    </div>
+
+    <div class="container-fluid pt-5 pb-5">
+        <div class="row">
+
+            <div class="col-12 col-md-7">
+                <h1 class="cust_head" style=" color: gold;">Customer Feedback</h1>
+                <h4 class="text-light text-center" style="padding-left: 50px;">Think about it: You always thought that
+                    your business efforts would bring great results. Instead,
+                    your restaurant business ended up having dissatisfied customers. Why did this happen? Perhaps, you
+                    didn’t try to find out what your customers actually want from your business.
+
+                    This makes one thing clear: Collecting customer feedback for restaurants is important. Taking a
+                    proactive approach to asking customers about their experience gives you an upper hand in improving
+                    your restaurant's services. According to the Harvard Business Review, 80% of businesses use customer
+                    satisfaction scores to analyse customer scores and improve them.
+                </h4>
+            </div>
+            <div class="col-12 col-md-5">
+                <img src="./Assets/chef3.webp" alt="chef" class="img-fluid" style="padding-top: 80px;">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="division">
+    </div>
+
+    <div class="container-fluid text-center">
+        <div class="row pt-3">
+        
+                <h5 class="text-light text-center rights_mention1" >All rights reserved by TPS</h5>
+      
+         
+        </div>
+                <div class="row text-light follow_icons" >
+                    <h6>Follow us on </h6>
+                    <i class="fa fa-whatsapp pl-3 pr-2"></i>
+                    <i class="fa fa-twitter pr-2"></i>
+                    <i class="fa fa-telegram pr-2"></i>
+                    <i class="fa fa-facebook-official pr-2"></i>
+                </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+        let decorate = document.querySelector('.con')
+
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    decorate.classList.remove('inter2h')
+                    decorate.classList.add("inter2v")
+                }
+
+            });
+        }, { threshold: 0.5 })
+
+        observer.observe(decorate)
+        
+
+        let mone = document.querySelector('.mone')
+        let change1 = ()=>{
+            mone.classList.remove('map')
+            mone.classList.add('mapv')
+            
+        }
+        let undo1 = ()=>{
+            mone.classList.remove('mapv')
+            mone.classList.add('map')
+        }
+        let mtwo = document.querySelector('.mtwo')
+        let change2 = ()=>{
+            mtwo.classList.remove('map')
+            mtwo.classList.add('mapv')
+        }
+        let undo2 = ()=>{
+            mtwo.classList.remove('mapv')
+            mtwo.classList.add('map')
+        }
+        let mthree = document.querySelector('.mthree')
+        let change3 = ()=>{
+            mthree.classList.remove('map')
+            mthree.classList.add('mapv')
+        }
+        let undo3 = ()=>{
+            mthree.classList.remove('mapv')
+            mthree.classList.add('map')
+        }
+        let mfour = document.querySelector('.mfour')
+        let change4 = ()=>{
+            mfour.classList.remove('map')
+            mfour.classList.add('mapv')
+        }
+        let undo4 = ()=>{
+            mfour.classList.remove('mapv')
+            mfour.classList.add('map')
+        }
+        let mfive = document.querySelector('.mfive')
+        let change5 = ()=>{
+            mfive.classList.remove('map')
+            mfive.classList.add('mapv')
+        }
+        let undo5 = ()=>{
+            mfive.classList.remove('mapv')
+            mfive.classList.add('map')
+        }
+        let msix = document.querySelector('.msix')
+        let change6 = ()=>{
+            msix.classList.remove('map')
+            msix.classList.add('mapv')
+        }
+        let undo6 = ()=>{
+            msix.classList.remove('mapv')
+            msix.classList.add('map')
+        }
+   
+        
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

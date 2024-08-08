@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    @font-face {
+        font-family: font-one;
+        src: url(./fonts/HeidanRoundedVintageDemoDra-PVGaE.otf);
+    }
+
+    html {
+        background-color: #F6F6EE;
+    }
+
+    .container-fluid {
+        background-color: #F6F6EE;
+    }
+
+    .main_heading {
+        font-family: "font-one";
+        padding-left: 120px;
+        font-size: 60px;
+        z-index: 1000;
+        position: absolute;
+        top: 10px;
+        left: 120px;
+        color: goldenrod;
+    }
+
+    .c {
+        border-radius: 2%;
+        margin-left: 250px;
+
+    }
+    .cgo{
+        opacity: 1;
+        animation: 5s fromleft 1;
+    }
+
+    .ygo {
+        opacity: 1;
+        animation: 5s fromright 1;
+    }
+
+    @media(max-width:1070px) {
+        .c {
+            border-radius: 2%;
+            margin-left: 50px;
+        }
+    }
+
+    .y {
+        margin-right: 0px;
+        margin-left: 0px;
+
+    }
+
+    @media (max-width:675px) {
+        .main_heading {
+            font-family: "font-one";
+            padding-left: 120px;
+            font-size: 60px;
+            z-index: 1000;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .imabt {
+            margin-left: 100px;
+            margin-top: 0px;
+        }
+    }
+
+    .rone {
+        z-index: 800;
+    }
+
+    .imabt {
+        margin-left: 100px;
+        margin-top: 80px;
+    }
+
+    .abt_text {
+        padding-left: 0px;
+        margin-top: 100px;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .img-fluid-c {
+        height: 290px;
+    }
+
+    .carda {
+        opacity: 1;
+        animation: 6s animate 1;
+    }
+
+    .cardn {
+        opacity: 0;
+    }
+
+
+    @keyframes animate {
+        from {
+            transform: translateX(1200px);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .chefhead {
+        padding-top: 40px;
+        font-family: "font-one";
+    }
+
+    .certhead {
+        padding-top: 40px;
+        font-family: "font-one";
+
+    }
+
+    .conl {
+        background: url(Assets/bimgl.png);
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 100px;
+    }
+
+    @keyframes fromleft {
+        from {
+            transform: translateX(-800px);
+        }
+
+        to {
+            transform: translateX(o);
+        }
+    }
+
+    @keyframes fromright {
+        from {
+            transform: translateX(800px);
+        }
+
+        to {
+            transform: translateX(o);
+        }
+    }
+    .pos{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 10000;
+    }
+</style>
+
+<body>
+
+    <div class="container-fluid ">
+        <a href="index_2.html"><i class="fa fa-home pos text-dark" style="font-size: 30px;"></i></a>
+        <h1 class="main_heading ">About us</h1>
+        <div class="row rone">
+            <div class="col-12 col-md-6 abt_ta">
+                <p class="abt_text text-center pl-5">
+                    Welcome to Vintage Velvet, where culinary artistry meets timeless elegance. Vintage Velvet is
+                    renowned for its exquisite blend of traditional flavors and contemporary
+                    presentation. Since 1964, we have delighted patrons with our commitment to using
+                    only the freshest ingredients sourced from local farmers and markets. Our menu, curated by esteemed
+                    chefs with a passion for innovation, showcases a symphony of flavors that pays homage to both
+                    classic dishes and bold, inventive creations. Whether you're joining us for a romantic dinner, a
+                    celebratory gathering, or a casual lunch, our warm hospitality and refined ambiance ensure a
+                    memorable dining experience. At Vintage Velvet, we invite you to savor the essence of culinary
+                    excellence in every bite, surrounded by the timeless allure of our distinguished establishment.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 abt_img">
+                <img src="./Assets/abt_chef_r.jpg" alt="img" class="img-fluid imabt" height="80%" width="80%">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center con">
+        <h1 class="chefhead" style="color: goldenrod;"><u>Our Golden Chefs</u></h1>
+        <h4 class="text-start mb-5">
+            At Vintage Velvet, we take pride in our culinary team, led by renowned chefs who bring their expertise to
+            each location</h4>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card card1 cardn">
+                    <img src="./Assets/chef_seven.webp" alt="img" class="img-fluid-c card-img-top">
+                    <div class="card-body">
+                        <h4 style="color: goldenrod; ">Chef Gordan Ramsey</h4>
+                        <h6>Locations Currently handling ,</h6>
+                        <h6>London , Las Vegas</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card card2  cardn">
+                    <img src="./Assets/ChefWangGang.webp" alt="img" class="img-fluid-c card-img-top">
+                    <div class="card-body">
+                        <h4 style="color: goldenrod; ">Chef Wang Gang</h4>
+                        <h6>Locations Currently handling ,</h6>
+                        <h6>Los Angeles</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card card3 cardn">
+                    <img src="./Assets/chef_oone.webp" alt="img" class="img-fluid-c card-img-top">
+                    <div class="card-body">
+                        <h4 style="color: goldenrod; ">Chef Jamie</h4>
+                        <h6>Locations Currently handling ,</h6>
+                        <h6>Paris</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card card4  cardn">
+                    <img src="./Assets/chef_eight.jpg" alt="img" class="img-fluid-c card-img-top">
+                    <div class="card-body">
+                        <h4 style="color: goldenrod; ">Chef Andy</h4>
+                        <h6>Locations Currently handling ,</h6>
+                        <h6>Berlin , Barcelona</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center">
+        <h1 class="certhead pb-5" style="color: goldenrod;"><u>Authentication</u></h1>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="./Assets/Certificate_of_reg.jpg" alt="certificate" class="img-fluid c cardn" height="50%"
+                    width="60%">
+
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="./Assets/Years.png" alt="years" class="img-fluid y cardn">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid conl">
+
+    </div>
+
+
+    <script>
+
+
+        let decorate5 = document.querySelector('.c')
+        let observer5 = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    decorate5.classList.remove("cardn")
+                    decorate5.classList.add("cgo")
+                }
+
+            });
+        }, { threshold: 0.5 })
+        observer5.observe(decorate5)
+
+
+        let decorate6 = document.querySelector('.y')
+        let observer6 = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    decorate6.classList.remove("cardn")
+                    decorate6.classList.add("ygo")
+                }
+
+            });
+        }, { threshold: 0.5 })
+        observer6.observe(decorate6)
+
+
+
+
+
+        let decorate4 = document.querySelector('.card4')
+
+        let observer4 = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    decorate4.classList.remove("cardn")
+                    decorate4.classList.add("carda")
+                }
+
+            });
+        }, { threshold: 0.5 })
+        observer4.observe(decorate4)
+
+        let decorate1 = document.querySelector('.card1')
+        let observer1 = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    decorate1.classList.remove("cardn")
+                    decorate1.classList.add("carda")
+                }
+
+            });
+        }, { threshold: 0.5 })
+        observer1.observe(decorate1)
+
+        let decorate2 = document.querySelector('.card2')
+        let observer2 = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    decorate2.classList.remove("cardn")
+                    decorate2.classList.add("carda")
+                }
+
+            });
+        }, { threshold: 0.5 })
+        observer2.observe(decorate2)
+
+        let decorate3 = document.querySelector('.card3')
+
+        let observer3 = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    decorate3.classList.remove("cardn")
+                    decorate3.classList.add("carda")
+                }
+
+            });
+        }, { threshold: 0.5 })
+
+        observer3.observe(decorate3)
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

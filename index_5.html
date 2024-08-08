@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .menu-area_1 {
+        border: 10px solid rgba(173, 151, 8, 0.6);
+        border-radius: 10px;
+        background-image: linear-gradient(30deg ,white,rgb(234, 226, 177),rgba(255, 217, 0, 0.66),rgb(233, 227, 143),white);
+    
+    }
+
+    .menu-area_2 {
+        border: 10px solid rgba(173, 151, 8, 0.6);
+        border-radius: 10px;
+        margin-left: 300px !important;
+        background-image: linear-gradient(30deg , white,rgb(234, 226, 177),rgba(255, 217, 0, 0.537),rgb(233, 227, 143),white);
+    
+    }
+    @media (max-width:880px){
+        .menu-area_2 {
+        border: 10px solid rgba(173, 151, 8, 0.6);
+        border-radius: 10px;
+        margin-left: 40px !important;
+
+    }
+    }
+
+    @font-face {
+        font-family: font-one;
+        src: url(./fonts/HeidanRoundedVintageDemoDra-PVGaE.otf);
+    }
+
+    @font-face {
+        font-family: font-two;
+        src: url(./fonts/WeddingdayPersonalUseRegular-1Gvo0.ttf);
+    }
+
+    @font-face {
+        font-family: font-three;
+        src: url(./fonts/RebellionKnightPersonalUseO-ZV4yZ.ttf);
+    }
+
+    @font-face {
+        font-family: font-four;
+        src: url(./fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+    }
+
+    @font-face {
+        font-family: font-five;
+        src: url(./fonts/NatureBeautyPersonalUse-9Y2DK.ttf);
+    }
+
+    @font-face {
+        font-family: font-six;
+        src: url(./fonts/AutumnFlowers-9YVZK.otf);
+    }
+
+    @font-face {
+        font-family: font-seven;
+        src: url(./fonts/SelfDeceptionRegular-ALLWA.ttf);
+    }
+
+    .menu_heading {
+        font-family: "font-six";
+        font-size: 90px;
+        color: rgb(204, 181, 4);
+        padding-top: 40px;
+        text-shadow: 1px 1px black;
+        margin: 0px;
+    }
+
+    .interface_1_outer {
+        /* background-image: linear-gradient(30deg ,white,rgb(234, 226, 177),rgba(255, 217, 0, 0.66),rgb(233, 227, 143),white); */
+        background-color: #F6F6EE;
+  
+    }
+    .interface_2_outer {
+        /* background-image: linear-gradient(30deg , white,rgb(234, 226, 177),rgba(255, 217, 0, 0.537),rgb(233, 227, 143),white); */
+        background-color: #F6F6EE;
+
+    }
+    html{
+        background-color: #F6F6EE;
+    }
+
+    .italian_men_head {
+        font-family: "font-four";
+    }
+
+    .i_meal_1 {
+        font-family: "font-seven";
+    }
+
+    .i_meal_2 {
+        font-family: "font-seven";
+        padding-left: 450px;
+    }
+
+    @media(max-width:930px) {
+        .i_meal_2 {
+            font-family: "font-seven";
+            padding-left: 0px;
+            margin-left: 20px;
+        }
+
+    }
+
+    .im_1_t {
+        font-size: 35px;
+        margin: 0;
+    }
+
+    .im_1_head {
+        font-size: 55px;
+    }
+
+    .im_2_t {
+        font-size: 35px;
+        margin: 0;
+    }
+
+    .im_2_head {
+        font-size: 55px;
+    }
+
+    .division {
+        height: 1px;
+        width: 35vw;
+        background-color: goldenrod;
+    }
+    .pos{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: black;
+    }
+</style>
+
+<body>
+    <div class="interface_1_outer">
+        <a href="index_2.html"><i class="fa fa-home pos" style="font-size: 30px;"></i></a>
+        <h1 class="menu_heading text-center">Menu</h1>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12 col-md-9 menu-area_1 ml-5 ">
+                    <h1 class="italian_men_head">Italian Menu</h1>
+                    <div class="row ">
+                        <div class="i_meal_1 ml-3">
+
+                            <h3 class="im_1_head mt-3">Seafood Delight</h3>
+                            <h5 class="im_1_t">Aperitivo: Campari</h5>
+                            <h5 class="im_1_t">Antipasto: Insalata Caprese (fresh tomatoes, mozzarella, and basil)</h5>
+                            <h5 class="im_1_t">Primo: Fritto Misto (mixed seafood fried)</h5>
+                            <h5 class="im_1_t">Secondo: Frutti di Mare (seafood medley over pasta)</h5>
+                            <h5 class="im_1_t">Contorno: Steamed broccoli with garlic and lemon</h5>
+                            <h5 class="im_1_t">Formaggio e Frutta: Grapes and Gorgonzola cheese</h5>
+                            <h5 class="im_1_t">Dolce: Panna cotta with mixed berries</h5>
+
+                        </div>
+
+                        <div class="division"></div>
+
+                        <div class="i_meal_2 mt-3">
+
+                            <h3 class="im_2_head">Tuscan Feast </h3>
+                            <h5 class="im_2_t">Aperitivo: Chianti
+                            </h5>
+                            <h5 class="im_2_t">Antipasto: Prosciutto ham with melon
+                            </h5>
+                            <h5 class="im_2_t">Primo: Pappardelle al Cinghiale (wild boar ragù over wide noodles)
+                            </h5>
+                            <h5 class="im_2_t">Secondo: Bistecca alla Fiorentina (T-bone steak)
+                            </h5>
+                            <h5 class="im_2_t">Contorno: Roasted potatoes with rosemary and olive oil
+                            </h5>
+                            <h5 class="im_2_t">Formaggio e Frutta: Fresh figs and Parmesan cheese
+                            </h5>
+                            <h5 class="im_2_t">Dolce: Gelato with hazelnut and chocolate
+                            </h5>
+
+                        </div>
+      
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="interface_2_outer pt-5">
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12 col-md-3"></div>
+                <div class="col-12 col-md-9 menu-area_2 ml-5">
+                    <h1 class="italian_men_head">French Menu</h1>
+                    <div class="row ">
+                        <div class="i_meal_1 ml-3">
+
+                            <h3 class="im_1_head mt-3">Formal French Menu
+                            </h3>
+                            <h5 class="im_1_t">Drink: Aperitif (e.g., whiskey and olives)
+                            </h5>
+                            <h5 class="im_1_t">Starter: Entrée (e.g., beef carpaccio)
+                            </h5>
+                            <h5 class="im_1_t">Main Course: Fish course (e.g., grilled salmon with soy sauce marinade)
+                            </h5>
+                            <h5 class="im_1_t">Dessert: Fruit tarts and berries with champagne</h5>
+
+
+                        </div>
+
+                        <div class="division"></div>
+
+                        <div class="i_meal_2 mt-3">
+
+                            <h3 class="im_2_head">5-Course French Menu
+                            </h3>
+                            <h5 class="im_2_t">Drink: Aperitif (e.g., martini)
+
+                            </h5>
+                            <h5 class="im_2_t">Starter: Amuse-bouche (e.g., sweet potato chips with goat cheese and
+                                caviar)
+
+                            </h5>
+                            <h5 class="im_2_t">Main Course: Le plat principal (e.g., stuffed lamb breast with lemon,
+                                ricotta, and oregano)
+
+                            </h5>
+                            <h5 class="im_2_t">Dessert: Miniature butter madeleine biscuits with tea
+
+                            </h5>
+                            <h5 class="im_2_t">Digestif: Brandy or scotch
+                            </h5>
+
+                        </div>
+                       
+                        
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="interface_1_outer pt-5">
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12 col-md-9 menu-area_1 ml-5 ">
+                    <h1 class="italian_men_head">Full English Menu</h1>
+                    <div class="row ">
+                        <div class="i_meal_1 ml-3">
+
+                            <h3 class="im_1_head mt-3">Traditional English</h3>
+                            <h5 class="im_1_t">Drink: English Breakfast Tea
+                            </h5>
+                            <h5 class="im_1_t">Starter: Fried Fish and Chips with Tartar Sauce</h5>
+                            <h5 class="im_1_t">Main Course: Beef Wellington with Roasted Potatoes</h5>
+                            <h5 class="im_1_t">Dessert: Lemon Meringue Pie</h5>
+
+
+                        </div>
+                        <div class="division"></div>
+                        
+
+                        <div class="i_meal_2 mt-3">
+
+                            <h3 class="im_2_head">Family English</h3>
+                            <h5 class="im_2_t">Drink: English Breakfast Tea
+
+                            </h5>
+                            <h5 class="im_2_t">Starter: Chicken Liver Pâté with Toasted Brioche
+
+                            </h5>
+                            <h5 class="im_2_t">Main Course: Roasted Beef with Roasted Carrots and Brussels Sprouts
+                            </h5>
+                            <h5 class="im_2_t">Dessert: Warm Sticky Toffee Pudding with Vanilla Ice Cream
+                            </h5>
+
+                        </div>
+                        <div class="division"></div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="interface_2_outer pt-5 pb-5">
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12 col-md-3"></div>
+                <div class="col-12 col-md-9 menu-area_2 ml-5">
+                    <h1 class="italian_men_head">Indian Menu</h1>
+                    <div class="row ">
+                        <div class="i_meal_1 ml-3">
+
+                            <h3 class="im_1_head mt-3">Coastal Indian Menu
+                            </h3>
+                            <h5 class="im_1_t">Drink: Kokum Sharbat
+
+                            </h5>
+                            <h5 class="im_1_t">Starter: Prawn Koliwada
+
+                            </h5>
+                            <h5 class="im_1_t">Main Course: Goan Fish Curry, Lemon Rice, Appam
+                            </h5>
+                            <h5 class="im_1_t">Dessert: Shrikhand</h5>
+
+
+                        </div>
+
+                        <div class="division"></div>
+
+                        <div class="i_meal_2 mt-3">
+
+                            <h3 class="im_2_head">Classic East Indian
+                            </h3>
+                            <h5 class="im_2_t">Drink: Kimad (a mix of spices and country liquor)
+
+
+                            </h5>
+                            <h5 class="im_2_t">Starter: Prawn Chilly Fry
+
+                            </h5>
+                            <h5 class="im_2_t">Main Course: Crab Curry Masala, Fried Mullets, Fried Mudskippers
+
+
+                            </h5>
+                            <h5 class="im_2_t">Dessert: Rasgulla (spongy and syrupy paneer and chhena-based sweets)
+
+                            </h5>
+
+
+                        </div>
+                       
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
